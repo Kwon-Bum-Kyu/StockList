@@ -11,10 +11,8 @@ targets:
     deploymentTarget: "13.0"
     source: 
       - path: StockTutorial
-        excludes:
-          - Info.plist # Info.plist 파일 추가해주세요!
     settings:
-      INFOPLIST_FILE: Info.plist # Info.plist 등록 
+      INFOPLIST_FILE: $(SRCROOT)/StockTutorial/Info.plist
       configs: 
         debug: 
           DEVELOPMENT_TEAM:  missing107@icloud.com
