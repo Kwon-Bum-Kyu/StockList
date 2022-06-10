@@ -1,20 +1,21 @@
 name: StockTutorial
-option: 
-    bundleIdPrefix: com.bumkyu
-    deploymentTarget: 
-      13.0
-    postGenCommand: pod install
+options:
+  bundleIdPrefix: com.bumkyu
+  deploymentTarget:
+    13.0
+  postGenCommand: pod install
 targets: 
   StockTutorial:
     type: application
     platform: iOS
     deploymentTarget: "13.0"
-    source: 
+    sources: 
       - path: StockTutorial
     settings:
-      INFOPLIST_FILE: $(SRCROOT)/StockTutorial/Info.plist
+      base: 
+        INFOPLIST_FILE: StockTutorial/Info.plist
       configs: 
         debug: 
-          DEVELOPMENT_TEAM:  missing107@icloud.com
+          DEVELOPMENT_TEAM: 4J9LDX5PQV
         release: 
-          DEVELOPMENT_TEAM:  missing107@icloud.com
+          DEVELOPMENT_TEAM: 4J9LDX5PQV
