@@ -3,7 +3,7 @@ import Foundation
 
 class StockRepositoryImpi: StockRepository {
     
-    var apiKey: String = "2V0WP3JT51NCE7U0"
+    var apiKey: String = "yourKey"
     let decoder = JSONDecoder()
     func fetchStocksPublisher(keywords : String) -> AnyPublisher<StockResult, Error> {
         let queryResult = parseQueryString(text: keywords)

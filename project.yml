@@ -1,6 +1,6 @@
 name: StockTutorial
 options:
-  bundleIdPrefix: com.bumkyu
+  bundleIdPrefix: com.kbkdev.RxSwifts
   deploymentTarget:
     13.0
   postGenCommand: pod install
